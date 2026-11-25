@@ -1,0 +1,62 @@
+# This repo is a template. Your footage, your videos and everything made from them stay on your
+# machine: only the shared kit (src/shared/), the starter (src/starter/) and the tooling are versioned.
+
+# Dependencies and build output
+node_modules
+dist
+build
+.DS_Store
+*.log
+
+# Secrets. Copy .env.example to .env for local values; .env is never committed.
+.env
+.env.*
+!.env.example
+
+# Your raw exports and screen recordings (the folder itself is kept)
+/inbox/*
+!/inbox/.gitkeep
+
+# Rendered videos, thumbnails and graphics (the folder itself is kept)
+/out/*
+!/out/.gitkeep
+
+# Footage, cutouts and sound effects. `npm run starter` rebuilds the starter's locally.
+/public/*
+!/public/.gitkeep
+
+# Every video's own folder. Only the shared kit and the starter are versioned.
+/src/*/
+!/src/shared/
+!/src/starter/
+
+# Video and audio, anywhere
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.m4v
+*.webm
+*.mkv
+*.avi
+*.m4a
+*.wav
+*.WAV
+*.mp3
+*.aac
+*.aif
+*.aiff
+*.flac
+*.ogg
+
+# Transcripts and per-video data, anywhere. The one exception is the starter's demo data: the
+# word timings of a synthetic voice reading one sample script, which the starter needs to compile.
+**/data/
+!/src/starter/data/
+*.raw.json
+*.srt
+*.vtt
+
+# Render caches: Whisper's install and model, temp audio, frames and bundles
+.cache
+whisper.cpp
