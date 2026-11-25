@@ -111,4 +111,4 @@ Whisper and its model are downloaded the first time you transcribe a video, unde
 
 Made by Clint · CodeCommerce
 
-YouTube: `YOUR_YOUTUBE_LINK` · Skool: `YOUR_SKOOL_LINK`
+YouTube: [`YOUR_YOUTUBE_LINK`](https://www.youtube.com/channel/UCmT9TwcIb_yAe7-Uqhn3fBA) · Skool: [`YOUR_SKOOL_LINK`](https://www.skool.com/codecommerce-builders-7248)
